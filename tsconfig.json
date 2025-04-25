@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "declaration": false,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "@core/*": [
+        "core/*"
+      ],
+      "@errors/*": [
+        "core/errors/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
