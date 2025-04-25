@@ -5,8 +5,6 @@ export interface IDataService<Entity extends Record<string, any>> {
 
     clear(...indexes: number[]): void;
 
-    set(index: number, value: Entity): void;
-
     sort(options: { column: number; ascending: boolean } | number): void;
 
     append(entities: Entity[]): void;

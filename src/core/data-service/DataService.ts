@@ -13,8 +13,6 @@ export class DataService<Entity extends Record<string, any>> implements IDataSer
         return this.dataMapper.toEntities(values, operation);
     }
 
-    set(index: number, value: Entity): void {}
-
     append(entities: Entity[]): void {
         if (entities.length < 1) return;
         const values = this.dataMapper.toData(entities);
